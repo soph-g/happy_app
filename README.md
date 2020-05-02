@@ -1,24 +1,29 @@
-# README
+# Happy App 🌞
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An app to help track 📝 and increase 📈 happiness 🌞
 
-Things you may want to cover:
+## Dependencies
 
-* Ruby version
+Ruby v2.6.0  
+Rails v6.0.2
+PostgreSQL
 
-* System dependencies
+## How to use
 
-* Configuration
+```sh
+# install dependencies
+bundle install
+# run the app on localhost:3000
+rails serve
+```
 
-* Database creation
+## Databases
 
-* Database initialization
+```sh
+# To create databases
+rake db:create
+```
 
-* How to run the test suite
+## Tests
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Coming soon*
