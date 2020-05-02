@@ -8,6 +8,8 @@ Ruby v2.6.0
 Rails v6.0.2
 PostgreSQL
 
+[Bootstrap Ruby](https://github.com/twbs/bootstrap-rubygem/blob/master/README.md)
+
 ## How to use
 
 ```sh
