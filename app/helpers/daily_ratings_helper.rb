@@ -1,0 +1,2 @@
+module DailyRatingsHelper
+end
