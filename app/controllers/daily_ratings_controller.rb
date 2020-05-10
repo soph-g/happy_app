@@ -8,6 +8,6 @@ class DailyRatingsController < ApplicationController
 
     @daily_rating.save
 
-    redirect_to welcome_index_path
+    redirect_to root_path
   end
 end
