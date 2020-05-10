@@ -1,10 +1,15 @@
+<div class="d-flex flex-column align-items-center mt-5">
+
 <h1>Rate my day</h1>
 
-<%= form_for :daily_rating, { method: :post, url: daily_ratings_path } do |f| %>
-  <%= f.label("Happiness Rating: ") %>
-  <% (1..10).each do |rating| %>
-    <%= f.label(:rating, rating.to_s) %>
-    <%= f.radio_button(:rating, rating.to_s) %>
-  <% end %>
-  <%= f.submit %>
+<%= form_for :daily_rating, { method: :post, url: daily_ratings_path, html: { class: "d-flex flex-column align-items-center"} } do |f| %>
+  <div>
+    <% (1..10).each do |rating| %>
+      <%= f.label(:rating, rating.to_s) %>
+      <%= f.radio_button(:rating, rating.to_s) %>
+    <% end %>
+  </div>
+  <%= f.submit 'Save Daily Rating', class: 'btn btn-primary mt-3 text-no-wrap' %>
 <% end %>
+
+</div>

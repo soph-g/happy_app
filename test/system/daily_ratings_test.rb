@@ -11,7 +11,7 @@ class DailyRatingsTest < ApplicationSystemTestCase
     visit root_url
     click_link 'Rate my day 📝'
     choose('daily_rating_rating_6')
-    click_button('Save Daily rating')
+    click_button('Save Daily Rating')
 
     assert_selector 'h1', text: 'Happy App'
     assert_current_path '/'
