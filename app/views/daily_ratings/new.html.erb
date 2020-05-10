@@ -2,6 +2,9 @@
 
 <%= form_for :daily_rating, { method: :post, url: daily_ratings_path } do |f| %>
   <%= f.label("Happiness Rating: ") %>
-  <%= f.range_field(:rating, { in: 1..10, step: 1 }) %>
+  <% (1..10).each do |rating| %>
+    <%= f.label(:rating, rating.to_s) %>
+    <%= f.radio_button(:rating, rating.to_s) %>
+  <% end %>
   <%= f.submit %>
 <% end %>
